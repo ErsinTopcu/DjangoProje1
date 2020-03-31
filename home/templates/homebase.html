@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}NOTEGRAM HOMEPAGE{% endblock %}</title>
+    <meta name="keywords" content="{% block keywords %}HomePage keywords{% endblock %}">
+    <meta name="description" content="{% block description %}HomePage Short description{% endblock %}">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'scss/main.css'%}">
+    <link rel="stylesheet" href="{% static 'scss/skin.css'%}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src= "http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="{% static 'script/index.js' %}"></script>
+    {% block head %}  {% endblock %}
+</head>
+
+<body id="wrapper">
+    {% include 'header.html' %}
+    {% block slider %} {% endblock %}
+    {% block content %}  {% endblock %}
+    {% block body %}  {% endblock %}
+    {% include 'footer.html' %}
+    {% block footer %}  {% endblock %}
+</body>
+</html>
+
