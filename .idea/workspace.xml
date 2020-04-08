@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="sliderda 2. resmin metni değişti">
+    <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,21 +62,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/static/fonts/bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\project1\home\templates" />
+      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
+      <recent name="C:\Django\project1\blog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
       <recent name="C:\Django\project1\home\static\script" />
       <recent name="C:\Django\project1\home\static\scss" />
       <recent name="C:\Django\project1\home\templates\script" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
-      <recent name="C:\Django\project1\home\templates" />
-      <recent name="C:\Django\project1\blog" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,6 +142,7 @@
       <workItem from="1585684966110" duration="1519000" />
       <workItem from="1585939385630" duration="1203000" />
       <workItem from="1586273311707" duration="3759000" />
+      <workItem from="1586335887467" duration="7148000" />
     </task>
     <task id="LOCAL-00001" summary="sliderda 2. resmin metni değişti">
       <created>1585685404420</created>
@@ -147,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585685404420</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="details da ck editör ekleme işlemi yapıldı">
+      <created>1586336057599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586336057599</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +166,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sliderda 2. resmin metni değişti" />
-    <option name="LAST_COMMIT_MESSAGE" value="sliderda 2. resmin metni değişti" />
+    <MESSAGE value="details da ck editör ekleme işlemi yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="details da ck editör ekleme işlemi yapıldı" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1585487960961">
@@ -178,10 +190,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1585479752023" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1585685522595">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586336056821">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1585685522595" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1586336056821" />
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog" timestamp="1585685810951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -214,10 +226,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585940090105" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586335981442">
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586374315762">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1586335981442" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1586374315762" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585685566339">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
