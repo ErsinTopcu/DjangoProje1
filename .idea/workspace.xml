@@ -2,12 +2,135 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/features.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/prettyPhoto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/features.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/IcoMoon-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/logo-politic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/logos/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/logos/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/phonebg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/btnNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/btnPrevious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/contentPattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/default_thumbnail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_rounded/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/btnNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/btnPrevious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/contentPattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/default_thumbnail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/dark_square/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/default_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/sprite_next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/sprite_prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/sprite_x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/default/sprite_y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/btnNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/btnPrevious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/contentPatternBottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/contentPatternLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/contentPatternRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/contentPatternTop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/default_thumbnail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/facebook/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_rounded/btnNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_rounded/btnPrevious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_rounded/default_thumbnail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_rounded/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_rounded/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_square/btnNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_square/btnPrevious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_square/default_thumbnail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_square/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/images/prettyPhoto/light_square/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/js/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/js/hoverdir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/js/modernizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/js/portfolio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/portfolio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/pricing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/about_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/about_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/device_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/features_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/features_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/features_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/inner-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/logo_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/parallax_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/parallax_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/parallax_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/portfolio_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/service_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/service_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/service_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/service_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/slider_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/slider_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/slider_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/testi_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/testi_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/goodweb/uploads/testi_03.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/scss/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
@@ -67,16 +190,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project1\home\templates" />
-      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
-      <recent name="C:\Django\project1\blog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
       <recent name="C:\Django\project1\home\static\script" />
       <recent name="C:\Django\project1\home\static\scss" />
       <recent name="C:\Django\project1\home\templates\script" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\project1\home\templates" />
+      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
+      <recent name="C:\Django\project1\blog" />
     </key>
   </component>
   <component name="RunManager">
@@ -142,7 +265,9 @@
       <workItem from="1585684966110" duration="1519000" />
       <workItem from="1585939385630" duration="1203000" />
       <workItem from="1586273311707" duration="3759000" />
-      <workItem from="1586335887467" duration="7148000" />
+      <workItem from="1586335887467" duration="7179000" />
+      <workItem from="1586374473185" duration="8000" />
+      <workItem from="1586525087808" duration="8696000" />
     </task>
     <task id="LOCAL-00001" summary="sliderda 2. resmin metni değişti">
       <created>1585685404420</created>
@@ -158,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586336057599</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="details da ck editör ekleme işlemi yapıldı">
+      <created>1586374326969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586374326969</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,10 +322,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1585479752023" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586336056821">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586374326203">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1586336056821" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1586374326203" />
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog" timestamp="1585685810951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -226,10 +358,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585940090105" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586374315762">
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586549341801">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1586374315762" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1586549341801" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585685566339">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

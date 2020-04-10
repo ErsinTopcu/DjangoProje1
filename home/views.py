@@ -15,3 +15,9 @@ def about(request):
     setting = Setting.objects.get(pk=1)
     context = {'setting': setting, 'page': 'about'}
     return render(request, 'about.html', context)
+
+
+def features(request):
+    setting = Setting.objects.get(pk=1)
+    context = {'setting': setting, 'page': 'features'}
+    return render(request, 'features.html', context)

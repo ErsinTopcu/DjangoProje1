@@ -6756,8 +6756,8 @@ body #skills .progress .progress-left .progress-bar {
 	border-top-right-radius: 100px;
 	border-bottom-right-radius: 100px;
 	border-left: 0;
-	-webkit-transform-origin: center left;
-	transform-origin: center left;
+	-webkit-transform-origin:  left;
+	transform-origin:  left;
 }
 body #skills .progress .progress-right {
 	right: 0;
@@ -6767,8 +6767,8 @@ body #skills .progress .progress-right .progress-bar {
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 	border-right: 0;
-	-webkit-transform-origin: center right;
-	transform-origin: center right;
+	-webkit-transform-origin:  right;
+	transform-origin:  right;
 	animation: loading-1 1.8s linear forwards;
 }
 body #skills .progress .progress-value {
@@ -7527,7 +7527,7 @@ body #features-page .subsection4 .pricing-plan .pricing-plan-head h3 {
 	text-transform: uppercase;
 }
 body #features-page .subsection4 .pricing-plan.pricing-color-true .pricing-plan-head {
-	margin: -1px -1px 0px -1px;
+	margin: -1px -1px 0 -1px;
 	color: #fff;
 }
 body #features-page .subsection4 .pricing-plan.pricing-color-true .pricing-plan-head h3 {
