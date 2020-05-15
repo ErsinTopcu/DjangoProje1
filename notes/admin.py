@@ -1,6 +1,9 @@
 from django.contrib import admin
 
 # Register your models here.
+from django.utils.html import format_html
+from mptt.admin import MPTTModelAdmin, DraggableMPTTAdmin
+
 from notes.models import Category, LectureNote, Images
 
 
@@ -27,6 +30,39 @@ class ImagesAdmin(admin.ModelAdmin):
     readonly_fields = ('image_tag',)
 
 
-admin.site.register(Category, CategoryAdmin)
+class CategoryAdmin2(DraggableMPTTAdmin):
+    mptt_indent_field = "title"
+    list_display = ('tree_actions', 'indented_title',
+                    'related_LectureNote_count', 'related_LectureNote_cumulative_count')
+    list_display_links = ('indented_title',)
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+
+        # Add cumulative product count
+        qs = Category.objects.add_related_count(
+                qs,
+                LectureNote,
+                'category',
+                'LectureNote_cumulative_count',
+                cumulative=True)
+
+        # Add non cumulative product count
+        qs = Category.objects.add_related_count(qs,
+                 LectureNote,
+                 'category',
+                 'notes_count',
+                 cumulative=False)
+        return qs
+
+    def related_LectureNote_count(self, instance):
+        return instance.notes_count
+    related_LectureNote_count.short_description = 'Related LectureNote (for this specific category)'
+
+    def related_LectureNote_cumulative_count(self, instance):
+        return instance.LectureNote_cumulative_count
+    related_LectureNote_cumulative_count.short_description = 'Related LectureNote (in tree)'
+
+admin.site.register(Category, CategoryAdmin2)
 admin.site.register(LectureNote, LectureNoteAdmin)
 admin.site.register(Images, ImagesAdmin)
