@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/notes/migrations/0011_auto_20200515_0028.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/migrations/0012_auto_20200515_1557.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Networking-Accessories.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/Networking-Accessories_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/cn2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/cnimage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/computer-networks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/csce416_banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/images.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/images_0l5JIYi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/indir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/network2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/note_share.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/research-concept-29355726.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/unilab_heat_transfer_software_blog_IT_ethics.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +149,7 @@
       <workItem from="1589456061241" duration="14000" />
       <workItem from="1589468275920" duration="7246000" />
       <workItem from="1589490501633" duration="4607000" />
-      <workItem from="1589545136490" duration="5048000" />
+      <workItem from="1589545136490" duration="5163000" />
     </task>
     <task id="LOCAL-00001" summary="sliderda 2. resmin metni değişti">
       <created>1585685404420</created>
@@ -236,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586711217137</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="slider düzenlendi.Admin tarafında kategori alt menü oluşturuldu">
+      <created>1589553231352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589553231352</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +235,8 @@
     <MESSAGE value="faq,references,features sayfaları oluşturuldu." />
     <MESSAGE value="12. video kadar olan kısım tamamlandı." />
     <MESSAGE value="contact form oluşturuldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact form oluşturuldu" />
+    <MESSAGE value="slider düzenlendi.Admin tarafında kategori alt menü oluşturuldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="slider düzenlendi.Admin tarafında kategori alt menü oluşturuldu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1585487960961">
@@ -273,18 +259,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1585479752023" />
-    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1586711216473">
+    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1589553230196">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1586711216473" />
+    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589553230196" />
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog" timestamp="1585685810951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1585685810951" />
-    <state x="748" y="370" key="FileChooserDialogImpl" timestamp="1584444126462">
+    <state x="748" y="370" key="FileChooserDialogImpl" timestamp="1589553333304">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="748" y="370" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1584444126462" />
+    <state x="748" y="370" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1589553333304" />
     <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1585479883535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -313,10 +299,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585940090105" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586711196912">
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589553268190">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1586711196912" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1589553268190" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585685566339">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
