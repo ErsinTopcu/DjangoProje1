@@ -41,27 +41,30 @@ class CategoryAdmin2(DraggableMPTTAdmin):
 
         # Add cumulative product count
         qs = Category.objects.add_related_count(
-                qs,
-                LectureNote,
-                'category',
-                'LectureNote_cumulative_count',
-                cumulative=True)
+            qs,
+            LectureNote,
+            'category',
+            'LectureNote_cumulative_count',
+            cumulative=True)
 
         # Add non cumulative product count
         qs = Category.objects.add_related_count(qs,
-                 LectureNote,
-                 'category',
-                 'notes_count',
-                 cumulative=False)
+                                                LectureNote,
+                                                'category',
+                                                'notes_count',
+                                                cumulative=False)
         return qs
 
     def related_LectureNote_count(self, instance):
         return instance.notes_count
+
     related_LectureNote_count.short_description = 'Related LectureNote (for this specific category)'
 
     def related_LectureNote_cumulative_count(self, instance):
         return instance.LectureNote_cumulative_count
+
     related_LectureNote_cumulative_count.short_description = 'Related LectureNote (in tree)'
+
 
 admin.site.register(Category, CategoryAdmin2)
 admin.site.register(LectureNote, LectureNoteAdmin)

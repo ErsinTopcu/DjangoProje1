@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/notes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_FLJ8w2N0SugtjeyQO1kYOQ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_FLJ8w2N0SugtjeyQO1kYOQ_J3wuc1g.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/BLOG_EN_0510_Most-Useful-Coding-and-Programming-Languages-to-Know.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/BLOG_EN_0510_Most-Useful-Coding-and-Programming-Languages-to-Know_NXseNHY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/abaegitim_web-sat-kimya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/computer-networks_0k4JP2p.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/computer-networks_PRvo93o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/indir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/indir_LxEFZ7r.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/indir_yb5XjjR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/unnamed.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/references.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,16 +83,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project1\home\templates" />
-      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
-      <recent name="C:\Django\project1\blog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
       <recent name="C:\Django\project1\home\static\script" />
       <recent name="C:\Django\project1\home\static\scss" />
       <recent name="C:\Django\project1\home\templates\script" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\project1\home\templates" />
+      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
+      <recent name="C:\Django\project1\blog" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,7 +169,10 @@
       <workItem from="1589456061241" duration="14000" />
       <workItem from="1589468275920" duration="7246000" />
       <workItem from="1589490501633" duration="4607000" />
-      <workItem from="1589545136490" duration="5163000" />
+      <workItem from="1589545136490" duration="5430000" />
+      <workItem from="1589578980615" duration="8210000" />
+      <workItem from="1589631015659" duration="15184000" />
+      <workItem from="1589718992465" duration="22713000" />
     </task>
     <task id="LOCAL-00001" summary="sliderda 2. resmin metni değişti">
       <created>1585685404420</created>
@@ -221,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589553231352</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="slider düzenlendi.Admin tarafında kategori alt menü oluşturuldu">
+      <created>1589553420825</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589553420825</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,14 +285,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="613" y="434" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1585487416555" />
-    <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585479752023">
+    <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589757020380">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1585479752023" />
-    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1589553230196">
+    <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1589757020380" />
+    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1589553420108">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589553230196" />
+    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589553420108" />
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog" timestamp="1585685810951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -291,10 +321,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="548" y="125" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1585685720049" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1586711239897">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1589553423316">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1586711239897" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589553423316" />
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585940090105">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -303,10 +333,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1589553268190" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585685566339">
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1589637853497">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1585685566339" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1589637853497" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

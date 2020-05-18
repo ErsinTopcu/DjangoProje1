@@ -2,7 +2,7 @@
 <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="0" ></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
@@ -11,31 +11,18 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             {% for rs in sliderdata %}
-                <div class="item active">
-                   <div class="fill"  > <img src="{{ rs.image.url }}" alt=""></div>
+                <div class="item {% if forloop.counter == 1 %} active {% endif %}">
+                    <div class="fill" style="background-image:url({{ rs.image.url }});"></div>
                     <div class="carousel-caption slide-up">
                         <h1 class="banner_heading">{{rs.title}}</h1>
                         <p class="banner_txt">{{ rs.description }}</p>
                         <div class="slider_btn">
-                            <a href="/LectureNotes/{{ rs.id }}/{{ rs.slug }}" type="button" class="btn btn-default slide">Open note <i class="fa fa-caret-right"></i></a>
+                            <a href="/LectureNotes/{{ rs.id }}/{{ rs.slug }}" type="button" class="btn btn-default slide">Nota Git <i class="fa fa-caret-right"></i></a>
 
                         </div>
                     </div>
                 </div>
-        {% endfor %}
-
-        <div class="item">
-
-
-                <div class="fill"  > <img src="{{ rs.image.url }}" alt=""></div>
-                <div class="carousel-caption slide-up">
-                    <h1 class="banner_heading">{{rs.title}}</h1>
-                    <p class="banner_txt">{{ rs.description }}</p>
-                    <div class="slider_btn">
-                        <a href="/notes/{{ rs.id }}" type="button" class="btn btn-default slide">Open note <i class="fa fa-caret-right"></i></a>
-                    </div>
-                </div>
-
+             {% endfor %}
         </div>
 
         <!-- Left and right controls -->
@@ -46,6 +33,4 @@
             <span class="sr-only">Next</span>
         </a>
 
-
-</div>
 </div>
