@@ -15,11 +15,16 @@ def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = LectureNote.objects.all()[:4]
     category = Category.objects.all()
+    lastnotes= LectureNote.objects.all().order_by('-id')[:3]
+    randomnotes= LectureNote.objects.all().order_by('?')[:3]
 
     context = {'setting': setting,
                'category': category,
                'page': 'home',
-               'sliderdata': sliderdata}
+               'sliderdata': sliderdata,
+               'randomnotes': randomnotes,
+               'lastnotes': lastnotes
+               }
     return render(request, 'index.html', context)
 
 

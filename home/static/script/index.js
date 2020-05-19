@@ -69,3 +69,4 @@ function changeColor(color) {
     $('#wrapper').removeClass();
     $('#wrapper').addClass(color);
 }
+
