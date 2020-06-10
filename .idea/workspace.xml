@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d02222c-ca52-41d2-a6e7-0b1b6ebd1130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/notes_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/notes_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/migrations/0013_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5ce426d9a4a48f75aee6f062_what-is-a-computer-network.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/C_Program_Snip.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/computer-networking-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/maxresdefault.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/media_c01_c0186680-e266-4a55-beae-565c453ae25b_phprOfNdi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/scss/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/notes.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/notes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +52,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -64,20 +83,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\project1\home\templates" />
-      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
-      <recent name="C:\Django\project1\blog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Django\project1\home\static" />
       <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
       <recent name="C:\Django\project1\home\static\script" />
       <recent name="C:\Django\project1\home\static\scss" />
       <recent name="C:\Django\project1\home\templates\script" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\project1\home\templates" />
+      <recent name="C:\Django\project1\home\static\fonts\bootstrap" />
+      <recent name="C:\Django\project1\blog" />
     </key>
   </component>
   <component name="RunManager">
@@ -158,7 +177,14 @@
       <workItem from="1589578980615" duration="8210000" />
       <workItem from="1589631015659" duration="15184000" />
       <workItem from="1589718992465" duration="22852000" />
-      <workItem from="1589830957686" duration="9253000" />
+      <workItem from="1589830957686" duration="9356000" />
+      <workItem from="1590524480426" duration="257000" />
+      <workItem from="1591355580678" duration="21301000" />
+      <workItem from="1591406525149" duration="3000" />
+      <workItem from="1591435651974" duration="9452000" />
+      <workItem from="1591606917730" duration="1467000" />
+      <workItem from="1591608407596" duration="14045000" />
+      <workItem from="1591786436560" duration="8921000" />
     </task>
     <task id="LOCAL-00001" summary="sliderda 2. resmin metni değişti">
       <created>1585685404420</created>
@@ -244,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589817975224</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="anasayfada notların gösterilmesi">
+      <created>1589849859646</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589849859646</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +293,8 @@
     <MESSAGE value="contact form oluşturuldu" />
     <MESSAGE value="slider düzenlendi.Admin tarafında kategori alt menü oluşturuldu" />
     <MESSAGE value="17.video ya kadar yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.video ya kadar yapıldı" />
+    <MESSAGE value="anasayfada notların gösterilmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="anasayfada notların gösterilmesi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1585487960961">
@@ -283,10 +317,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="776" y="240" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1589757020380" />
-    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1589817974365">
+    <state x="653" y="40" key="CommitChangelistDialog2" timestamp="1589849858731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589817974365" />
+    <state x="653" y="40" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589849858731" />
     <state x="97" y="166" width="1416" height="676" key="DiffContextDialog" timestamp="1585685810951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -311,18 +345,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585479883535" />
-    <state x="548" y="125" key="SettingsEditor" timestamp="1585685720049">
+    <state x="346" y="76" key="SettingsEditor" timestamp="1591691786000">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="548" y="125" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1585685720049" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1589818000638">
+    <state x="346" y="76" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1591691786000" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1589849871331">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589818000638" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589849871331" />
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585940090105">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="396" y="309" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585940090105" />
+    <state x="444" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591790754713">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="444" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1591790754713" />
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589817981169">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

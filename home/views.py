@@ -1,3 +1,4 @@
+import json
 from unicodedata import category
 
 import notes
@@ -6,17 +7,18 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from home.forms import SearchForm
 from home.models import Setting, ContactFormMessage, ContactForm
 
-from notes.models import LectureNote, Category
+from notes.models import LectureNote, Category, Images, Comment
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = LectureNote.objects.all()[:4]
     category = Category.objects.all()
-    lastnotes= LectureNote.objects.all().order_by('-id')[:3]
-    randomnotes= LectureNote.objects.all().order_by('?')[:3]
+    lastnotes = LectureNote.objects.all().order_by('-id')[:3]
+    randomnotes = LectureNote.objects.all().order_by('?')[:3]
 
     context = {'setting': setting,
                'category': category,
@@ -78,6 +80,57 @@ def category_notes(request, id, slug):
     notes = LectureNote.objects.filter(category_id=id)
     context = {'notes': notes,
                'category': category,
-               'categorydata':categorydata,
+               'categorydata': categorydata,
                }
     return render(request, 'notes.html', context)
+
+
+def notes_detail(request, id, slug):
+    mesaj = "Ders Notu ", id, "/", slug
+    category = Category.objects.all()
+    notes = LectureNote.objects.get(pk=id)
+    images = Images.objects.filter(notes_id=id)
+    comments = Comment.objects.filter(notes_id=id, status='True')
+    context = {'notes': notes,
+               'category': category,
+               'images': images,
+               'comments': comments,
+
+               }
+    return render(request, 'notes_detail.html', context)
+
+
+def notes_search(request):
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            category = Category.objects.all()
+            search = form.cleaned_data["search"]
+            catid = form.cleaned_data["catid"]
+            if catid == 0:
+                notes = LectureNote.objects.filter(title__icontains=search)
+            else:
+                notes = LectureNote.objects.filter(title__icontains=search, category_id=catid)
+
+            context = {'notes': notes,
+                       'category': category,
+                       }
+            return render(request, 'notes_search.html', context)
+
+    return HttpResponseRedirect('/')
+
+
+def notes_search_auto(request):
+    if request.is_ajax():
+        q = request.GET.get('term', '')
+        notes = LectureNote.objects.filter(title__icontains=q)
+        results = []
+        for rs in notes:
+            notes_json = {}
+            notes_json = rs.title
+            results.append(notes_json)
+        data = json.dumps(results)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)

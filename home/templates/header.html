@@ -1,18 +1,56 @@
 {% load static %}
+
+
 <section id="top-header">
+    <script>
+        $(function () {
+            $("#search").autocomplete({
+                source: "/search_auto/",
+                select: function (event, ui) { //item selected
+                    AutoCompleteSelectHandler(event, ui)
+                },
+                minLength: 2,
+            });
+        });
+
+        function AutoCompleteSelectHandler(event, ui) {
+            var selectedObj = ui.item;
+        }
+    </script>
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
                 <ul class="contact_links">
-                    <li><i class="fa fa-phone"></i><a href="#">+91 848 594 5080</a></li>
                     <li>
-                        <i class="fa fa-envelope"></i
-                        ><a href="#">sales@aspiresoftware.in</a>
+                        <form class="example" action="/search/" method="post">
+                            {% csrf_token %}
+                            <input id="search" name="search" type="text" placeholder="Search..">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <div class="select">
+                                {% load mptt_tags %}
+                                <select name="catid" id="catid">
+                                    <option value="0">Tüm Kategoriler</option>
+                                    {% recursetree category %}
+                                        {% if node.is_leaf_node %}
+                                            <option value="{{ node.id }}">{{ node.title }}</option>{% endif %}
+                                        {% if not node.is_leaf_node %}
+                                            <optgroup label="{{ node.title }}">
+                                                {{ children }}
+                                            </optgroup>
+                                        {% endif %}
+
+                                    {% endrecursetree %}
+                                </select>
+                            </div>
+                        </form>
+
                     </li>
                 </ul>
             </div>
             <div class="col-md-5 col-sm-5 col-xs-5 social">
                 <ul class="social_links">
+
+
                     <li>
                         <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -72,27 +110,28 @@
                                 {% recursetree category %}
                                     <li class="dropdown">
 
-                                        <li><a href="/category/{{ node.id }}/{{ node.slug }}" class="dropdown-toggle" {% if not node.is_leaf_node %}
-                                               data-toggle="dropdown"{% endif %}>{{ node.title }}<span
-                                                class="fa fa-angle-down"></span></a>
+                                    <li><a href="/category/{{ node.id }}/{{ node.slug }}" class="dropdown-toggle"
+                                            {% if not node.is_leaf_node %}
+                                           data-toggle="dropdown"{% endif %}>{{ node.title }}<span
+                                            class="fa fa-angle-down"></span></a>
+                                    </li>
+
+                                    {% if not node.is_leaf_node %}
+                                        <li class="children" data-toggle="dropdown">
+                                        <li><a>{{ children }}</a></li>
+
                                         </li>
-
-                                        {% if not node.is_leaf_node %}
-                                            <li class="children" data-toggle="dropdown">
-                                                <li><a >{{ children }}</a></li>
-
-                                            </li>
-                                        {% endif %}
+                                    {% endif %}
                                     </li>
                                 {% endrecursetree %}
                             </ul>
                         </li>
                         <li><a href="/about">Hakkımızda</a></li>
-                        <li><a href="/features">Features</a></li>
-                        <li><a href="/faq">Sık Sorulan Sorular</a></li>
+                        <li><a href="/faq">SSS</a></li>
                         <li><a href="/contact">İletİşİm</a></li>
                         <li><a href="/login">Oturum Aç</a></li>
                         <li><a href="/registration">Kayıt Ol</a></li>
+
                     </ul>
                 </div>
                 <!--/.nav-collapse -->

@@ -1,0 +1,60 @@
+{% extends "homebase.html" %}
+
+{% block title %}Not Arama Sonuçları{% endblock %}
+{% block keywords %}{{ categorydata.keywords }}{% endblock %}
+{% block description %}{{ categorydata.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>{{ categorydata.title }}</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
+                        <h4>Arama Sonuçları</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Anasayfa<span
+                            class="sep"> 	/ </span><span class="current"> Arama Sonuçları</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-page-section-3">
+
+        <div class="container">
+            <div class="row">
+                <table cellpadding="3" width="1200">
+                    <tr>
+                        <th>Resim</th>
+                        <th>Not Adı</th>
+                        <th>Kategori</th>
+                        <th>Yazar</th>
+                    </tr>
+                    {% for rs in notes %}
+                        <tr>
+                            <td><a href="/LectureNotes/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="display:inline; margin: 5px 5px;" width="200" height="100" alt=""  ></a></td>
+                            <td><h4><a href="/LectureNotes/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></h4></td>
+                            <td><a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category }}</a></td>
+                            <td><h4>{{ rs.author }}</h4></td>
+                        </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

@@ -33,7 +33,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('category/<int:id>/<slug:slug>/', views.category_notes, name='category_notes'),
-
+    path('LectureNotes/<int:id>/<slug:slug>/', views.notes_detail, name='notes_detail'),
+    path('search/', views.notes_search, name='notes_search'),
+    path('search_auto/', views.notes_search_auto, name='notes_search_auto'),
 ]
 
 if settings.DEBUG:
