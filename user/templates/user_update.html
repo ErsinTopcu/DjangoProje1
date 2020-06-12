@@ -1,0 +1,76 @@
+{% extends "homebase.html" %}
+
+{% block title %}{{ profile.user_name }} Profil{% endblock %}
+{% block keywords %}{{ setting.title }}{% endblock %}
+{% block description %}{{ setting.title }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Profili Güncelle</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
+                        <h4>Profili Güncelle</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Profilim<span
+                            class="sep"> 	/ </span><span class="current"> Profili Güncelle</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="login-reg">
+
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-3  ">
+
+                    <div class="section-heading">
+                        <h2>Kullanıcı <span>Panelİ</span></h2>
+                    </div>
+                    {% include "user_panel.html" %}
+                </div>
+
+                <div class="col-md-9  ">
+                    <div class="form-box">
+                        <div class="section-heading">
+                            <h2>Kullanıcı <span>Bİlgİlerİ</span></h2>
+                            <hr/>
+                        </div>
+                        <div class="content">
+                            <div class="media">
+                                <img src="{{ user.userprofile.image.url }}"
+                                     style="height: 150px; border-radius: 45px;margin-bottom: 10px"
+                                     class="thumbnail;center" alt=" ">
+                            </div>
+                            <div class="form-bottom">
+                                <form method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <fieldset class="form-group">
+                                        {{ user_form.as_p }}
+                                        {{ profile_form.as_p }}
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <button class="btn btn-default submit-button" type="submit">Güncelle</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "homebase.html" %}
+
+{% block title %}{{ profile.user_name }} Profil{% endblock %}
+{% block keywords %}{{ setting.title }}{% endblock %}
+{% block description %}{{ setting.title }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+        <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Profil Yönetimi</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
+                        <h4>Profil Yönetimi</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Profil Yönetimi<span class="sep"> 	/ </span><span class="current"> Profilim</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-3  ">
+                    <div class="section-heading">
+                        <h2>Kullanıcı <span>Panelİ</span></h2>
+                    </div>
+                    {% include "user_panel.html" %}
+
+                </div>
+                <div class="col-md-9 ">
+                    <div class="section-heading">
+                        <h2>Kullanıcı <span>Bİlgİlerİ</span></h2>
+                        <hr/>
+                    </div>
+                    <div >
+
+                        <table  cellpadding="10" width="100%">
+                            <tr>
+                                <th class="text-left">
+                                    <a href="/user/update" class="btn btn-default submit-button">Profili Güncelle</a>
+                                    <a href="/user/password" class="btn btn-default submit-button">Şifre Değiştir</a>
+                                </th>
+                                <td><img  src="{{ profile.image.url }}" style="height: 150px; border-radius: 45px" class="thumbnail"  alt=" "></td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">Ad Soyad</th>
+                                <td class="text-left">{{ profile.user_name }}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">E-mail</th>
+                                <td class="text-left">{{ profile.user.email }}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">Phone</th>
+                                <td class="text-left">{{ profile.phone }}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">Adres</th>
+                                <td class="text-left">{{ profile.address }}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">City</th>
+                                <td class="text-left">{{ profile.city }}</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left">Country</th>
+                                <td class="text-left">{{ profile.country }}</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

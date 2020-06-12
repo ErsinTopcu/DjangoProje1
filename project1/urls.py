@@ -23,19 +23,24 @@ from home import views
 urlpatterns = [
 
     path('', include('home.urls')),
+    path('home/', include('home.urls')),
+    path('notes/', include('notes.urls')),
+    path('user/', include('user.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('admin/', admin.site.urls),
+
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('references/', views.references, name='refences'),
     path('faq/', views.faq, name='faq'),
     path('features/', views.features, name='features'),
-    path('home/', include('home.urls')),
-    path('notes/', include('notes.urls')),
-    path('admin/', admin.site.urls),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('category/<int:id>/<slug:slug>/', views.category_notes, name='category_notes'),
     path('LectureNotes/<int:id>/<slug:slug>/', views.notes_detail, name='notes_detail'),
     path('search/', views.notes_search, name='notes_search'),
     path('search_auto/', views.notes_search_auto, name='notes_search_auto'),
+    path('logout/', views.logout_view, name='logout_view'),
+    path('login/', views.login_view, name='login_view'),
+    path('signup/', views.signup_view, name='signup_view'),
 ]
 
 if settings.DEBUG:

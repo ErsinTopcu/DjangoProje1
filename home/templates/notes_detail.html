@@ -122,12 +122,15 @@
                         <div>
                             {% for rs in comments %}
                                 <div class="testimon">
-                                    <div><p><i class="fa fa-user icon-3x" ></i><b><span>{{ rs.user.first_name }}</span></b><br>
-                                        <i class="fa fa-clock-o" ></i> {{ rs.create_at }}</p></div>
+                                    <div><p><i
+                                            class="fa fa-user icon-3x"></i><b><span>{{ rs.user.first_name }}</span></b><br>
+                                        <i class="fa fa-clock-o"></i> {{ rs.create_at }}</p></div>
                                     <img src="{% static 'img/team-4.jpg' %}" alt="Avatar" style="width:60px">
 
                                     <p><b><h5>{{ rs.subject }}</h5></b> {{ rs.comment }}</p>
-                                <b><hr></b>
+                                    <b>
+                                        <hr>
+                                    </b>
                                 </div>
                             {% endfor %}
                         </div>

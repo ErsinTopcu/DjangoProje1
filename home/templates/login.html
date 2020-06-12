@@ -1,0 +1,76 @@
+{% extends "homebase.html" %}
+
+{% block title %} Giriş Yap {% endblock %}
+{% block keywords %}{{ setting.title }}{% endblock %}
+{% block description %}{{ setting.title }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Gİrİş Formu</h2>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+
+                                <h3>Sİteye Gİrİş Yapınız</h3>
+                                <p>Giriş yapabilmek için kullanıcı adı ve şifrenizi girin</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-key"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            {% if messages %}
+                                {% for message in messsages %}
+                                    <div class="alert alert-{{ message.tags }}" role="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+
+                            <form role="form" action="" class="login-form" method="post">
+                                {% csrf_token %}
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+
+                                    <input type="text" class="form-control" name="username" placeholder="Kullanıcı Adı"
+                                           aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group form-group">
+                                                                <span class="input-group-addon" id="basic-addon1"><i
+                                                                        class="fa fa-unlock"></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Şifre"
+                                           aria-describedby="basic-addon1">
+                                </div>
+                                <button type="submit" value="Login" class="btn">Log in!</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+{% endblock %}

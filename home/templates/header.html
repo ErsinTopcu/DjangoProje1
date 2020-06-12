@@ -123,14 +123,34 @@
                                         </li>
                                     {% endif %}
                                     </li>
+
                                 {% endrecursetree %}
                             </ul>
                         </li>
                         <li><a href="/about">Hakkımızda</a></li>
                         <li><a href="/faq">SSS</a></li>
                         <li><a href="/contact">İletİşİm</a></li>
-                        <li><a href="/login">Oturum Aç</a></li>
-                        <li><a href="/registration">Kayıt Ol</a></li>
+                        <li class="dropdown">
+                            <a href="/login" class="dropdown-toggle" data-toggle="dropdown">
+                                {% if user.id is not None %} <strong>{{ user.first_name }}
+                                    <span class="fa fa-angle-down"></span></strong>{% else %}Oturum Aç
+                                    <span class="fa fa-angle-down"></span>
+                                {% endif %}
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                {% if user.id is not None %}
+                                    <li><a href="/user"><i class="fa fa-user"></i>Profilim</a></li>
+                                    <li><a href=""><i class="fa fa-clipboard"></i>Eklediğim Notlar</a></li>
+                                    <li><a href="/user/comments/"><i class="fa fa-comment"></i>Yorumlarım</a></li>
+                                    <li><a href="/logout"><i class="fa fa-sign-out"></i>Çıkış</a></li>
+                                 {% else %}
+                                    <li><a href="/login"><i class="fa fa-user"></i>Giriş</a></li>
+
+                                {% endif %}
+                            </ul>
+                        </li>
+
+                        <li><a href="/signup">Kayıt Ol</a></li>
 
                     </ul>
                 </div>

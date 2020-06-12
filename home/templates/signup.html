@@ -1,0 +1,74 @@
+{% extends "homebase.html" %}
+
+{% block title %} Kayıt Ol {% endblock %}
+{% block keywords %}{{ setting.title }}{% endblock %}
+{% block description %}{{ setting.title }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Kayİt Formu</h2>
+            </div>
+        </div>
+
+    </section>
+
+
+<section id="login-reg">
+    <div id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Kayıt Ol</h3>
+                                <p>Kayıt olmak için bilgileri doldurunuz</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            {% if messages %}
+                                {% for message in messsages %}
+                                    <div class="alert alert-{{ message.tags }}" role="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+
+                            <form method="post" role="form" action="" class="login-form" >
+                                {% csrf_token %}
+                                {% for field in form %}
+                                    <p >
+                                        {{ field.label_tag }}<br>
+                                        {{field}}
+                                        {% if field.help_text %}
+                                            <small style="color: grey">{{ field.help_text }}</small>
+                                        {% endif %}
+                                        {% for error in field.errors %}
+                                            <p class="input-group form-group" style="color: red">{{ error }}</p>
+                                        {% endfor %}
+                                    </p>
+                                {% endfor %}
+                                <button type="submit" class="btn">Kayıt Ol!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+{% endblock %}

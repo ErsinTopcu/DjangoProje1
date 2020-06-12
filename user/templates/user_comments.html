@@ -1,0 +1,80 @@
+{% extends "homebase.html" %}
+
+{% block title %}{{ profile.user_name }} Yorumlarım{% endblock %}
+{% block keywords %}{{ setting.title }}{% endblock %}
+{% block description %}{{ setting.title }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Yorumlarım</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
+                        <h4>Yorumlarım</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Profil Yönetimi<span class="sep"> 	/ </span><span
+                            class="current"> Yorumlarım</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-3  ">
+                    <div class="section-heading">
+                        <h2>Kullanıcı <span>Panelİ</span></h2>
+                    </div>
+                    {% include "user_panel.html" %}
+
+                </div>
+                <div class="col-md-9 ">
+                    <div class="section-heading">
+                        <h2>Kullanıcı <span>Bİlgİlerİ</span></h2>
+                        <hr/>
+                    </div>
+                    <div class="footer-block">
+
+                        <table class="footer-links" cellpadding="3" width="100%">
+                            <tr>
+                                <th class="text-left"><h5>Ders Notu</h5></th>
+                                
+                                <th class="text-left"><h5>Konu</h5></th>
+                                <th class="text-left"><h5>Comment</h5></th>
+                                <th class="text-left"><h5>Status</h5></th>
+                                <th class="text-left"><h5>Date</h5></th>
+                                <th class="text-left"><h5>Detail</h5></th>
+                            </tr>
+                            {% for rs in comments %}
+                                <tr>
+                                    <a href="/notes/{{ rs.notes_id }}/{{ rs.notes.slug }}"></a>
+                                    <td class="text-left"><a href="/LectureNotes/{{ rs.notes_id }}/{{ rs.notes.slug }}"><strong>{{ rs.notes.title }}</strong></a></td>
+                                    <td class="text-left">{{ rs.subject }}</td>
+                                    <td class="text-left">{{ rs.comment }}</td>
+                                    <td class="text-left">{{ rs.status }}</td>
+                                    <td class="text-left">{{ rs.create_at }}</td>
+                                    <td class="text-left"><a class="btn btn-default submit-button" style="border-radius: 10px;margin-bottom: 2px" href="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Yorumu silmek istediğinizden emin misiniz ? ')">Sil</a></td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
