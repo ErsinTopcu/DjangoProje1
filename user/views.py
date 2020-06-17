@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 # Create your views here.
+from content.models import Content, Menu, ContentForm
 from home.models import UserProfile
 from notes.models import Category, Comment
 from user.forms import UserUpdateForm, ProfileUpdateForm
@@ -79,6 +80,86 @@ def comments(request):
 @login_required(login_url='login')
 def deletecomment(request, id):
     current_user = request.user
-    Comment.objects.filter(id=id,user_id=current_user.id).delete()
+    Comment.objects.filter(id=id, user_id=current_user.id).delete()
     messages.success(request, 'Yorumunuz başarıyla silindi')
     return HttpResponseRedirect('/user/comments')
+
+
+@login_required(login_url='login')
+def contents(request):
+    category = Category.objects.all()
+    menu = Menu.objects.all()
+    current_user = request.user
+    contents = Content.objects.filter(user_id=current_user.id)
+    context = {
+        'category': category,
+        'menu': menu,
+        'contents': contents,
+    }
+    return render(request, 'user_contents.html', context)
+
+
+@login_required(login_url='login')
+def addcontent(request):
+    if request.method == 'POST':
+        form = ContentForm(request.POST, request.FILES)
+        if form.is_valid():
+            current_user = request.user
+            data = Content()
+            data.user_id = current_user.id
+            data.title = form.cleaned_data['title']
+            data.keywords = form.cleaned_data['keywords']
+            data.description = form.cleaned_data['description']
+            data.image = form.cleaned_data['image']
+            data.type = form.cleaned_data['type']
+            data.slug = form.cleaned_data['slug']
+            data.detail = form.cleaned_data['detail']
+            data.status = 'False'
+            data.save()
+            messages.success(request, "Notunuz Başarı ile Gönderilmiştir,Teşekkür Ederiz.")
+            return HttpResponseRedirect('/user/contents')
+        else:
+            messages.warning(request, 'Content Form Error:' + str(form.errors))
+            return HttpResponseRedirect('/user/addcontent')
+    else:
+        category = Category.objects.all()
+        form = ContentForm()
+        menu = Menu.objects.all()
+        context = {
+            'menu': menu,
+            'category': category,
+            'form': form,
+        }
+        return render(request, 'user_addcontent.html', context)
+
+
+@login_required(login_url='login')
+def contentedit(request, id):
+    content = Content.objects.get(id=id)
+    if request.method == 'POST':
+        form = ContentForm(request.POST, request.FILES, instance=content)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Notunuz Başarı ile Güncellenmiştir,Teşekkür Ederiz.")
+            return HttpResponseRedirect('/user/contents')
+        else:
+            messages.warning(request, 'Content Form Error:' + str(form.errors))
+            return HttpResponseRedirect('/user/contentedit/' + str(id))
+    else:
+        category = Category.objects.all()
+        form = ContentForm(instance=content)
+        menu = Menu.objects.all()
+        context = {
+            'menu': menu,
+            'category': category,
+            'form': form,
+        }
+        return render(request, 'user_addcontent.html', context)
+
+
+@login_required(login_url='login')
+def contentdelete(request, id):
+    current_user = request.user
+    Content.objects.filter(id=id, user_id=current_user.id).delete()
+    messages.success(request, 'Not başarıyla silindi')
+    return HttpResponseRedirect('/user/contents')
